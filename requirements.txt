@@ -1,1 +1,4 @@
 # Dependencies will be added as the project evolves.
+
+fastapi
+uvicorn
