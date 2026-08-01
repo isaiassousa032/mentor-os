@@ -129,6 +129,38 @@ data_mentor.md
 
 ---
 
+## Documentação de Código
+
+O MentorOS utiliza docstrings para documentar módulos, classes e funções públicas.
+
+### Diretrizes
+
+- Utilizar docstrings no padrão Google Style.
+- Evitar comentários desnecessários.
+- Utilizar comentários (`#`) apenas para explicar decisões arquiteturais ou trechos complexos.
+- Escrever docstrings em português durante o desenvolvimento inicial do projeto.
+
+### Exemplo
+
+```python
+class BaseAIProvider(ABC):
+    """Interface base para todos os provedores de IA."""
+
+    @abstractmethod
+    def generate(self, prompt: str) -> str:
+        """
+        Envia um prompt ao modelo de IA.
+
+        Args:
+            prompt: Texto enviado ao modelo.
+
+        Returns:
+            Resposta gerada pelo modelo.
+        """
+        pass
+```
+---
+
 ## Workflows
 
 Formato:
